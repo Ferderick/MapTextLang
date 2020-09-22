@@ -591,7 +591,7 @@ function SetShopCheat()
 
 function CheckAutoSlay(stageind)
 {
-	if(firststage){firststage=false;}else if(!extreme)
+	if(firststage){firststage=false;}//else if(!extreme)
 	{
 		local ctc_check = 0;
 		local tc_check = 0;
@@ -989,7 +989,7 @@ function ExtremeCheck()
 {
 	if (extreme)
 	{
-		ResetMapBase();
+		//ResetMapBase();
 	}
 }
 
