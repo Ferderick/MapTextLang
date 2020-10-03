@@ -593,7 +593,7 @@ function SetShopCheat()
 
 function CheckAutoSlay(stageind)
 {
-	if(firststage){firststage=false;}else if(!extreme)
+	if(firststage){firststage=false;}else if(!extreme || extreme)
 	{
 		local ctc_check = 0;
 		local tc_check = 0;
@@ -989,7 +989,7 @@ function ResetMap(button=false)
 
 function ExtremeCheck()
 {
-	if (extreme)
+	if (extreme && !extreme)
 	{
 		ResetMapBase();
 	}
@@ -1734,13 +1734,13 @@ function SpawnExtremeZombieItem(stage)	//TODO - spawn in zombie items based on t
 		//red heal:			ITEMX_tem_hich_heal
 		//yellow heal:		ITEMX_tem_hich_legendaryheal
 		//--------------------------------
-		ExevSpawn("ITEMX_tem_hich_heal",humanitem_pos+Vector(-64,96,4));
-		ExevSpawn("ITEMX_tem_qaz_small",humanitem_pos+Vector(-64,32,4));
-		ExevSpawn("ITEMX_tem_qaz_small",humanitem_pos+Vector(-64,-32,4));
-		ExevSpawn("ITEMX_tem_qaz_mid",humanitem_pos+Vector(-64,-96,4));
-		ExevSpawn("ITEMX_tem_ord_dick",humanitem_pos+Vector(64,96,4));
-		ExevSpawn("ITEMX_tem_Turtle_push",humanitem_pos+Vector(64,32,4));
-		ExevSpawn("ITEMX_tem_luffaren_diddlecannon",humanitem_pos+Vector(64,-32,4));
+		//ExevSpawn("ITEMX_tem_hich_heal",humanitem_pos+Vector(-64,96,4));
+		//ExevSpawn("ITEMX_tem_qaz_small",humanitem_pos+Vector(-64,32,4));
+		//ExevSpawn("ITEMX_tem_qaz_small",humanitem_pos+Vector(-64,-32,4));
+		//ExevSpawn("ITEMX_tem_qaz_mid",humanitem_pos+Vector(-64,-96,4));
+		//ExevSpawn("ITEMX_tem_ord_dick",humanitem_pos+Vector(64,96,4));
+		//ExevSpawn("ITEMX_tem_Turtle_push",humanitem_pos+Vector(64,32,4));
+		//ExevSpawn("ITEMX_tem_luffaren_diddlecannon",humanitem_pos+Vector(64,-32,4));
 		//ExevSpawn("XXXXXXXXXXXXXXX",humanitem_pos+Vector(64,-96,4));
 		//ExevSpawn("XXXXXXXXXXXXXXX",humanitem_pos+Vector(0,96,4));
 		//ExevSpawn("XXXXXXXXXXXXXXX",humanitem_pos+Vector(0,32,4));
